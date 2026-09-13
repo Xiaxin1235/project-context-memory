@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Context Memory"
+  short_description: "Keep project context portable across conversations"
+  default_prompt: "Use $project-context-memory to update the canonical project context and prepare the next handoff."
+
+policy:
+  allow_implicit_invocation: true

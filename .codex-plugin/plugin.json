@@ -1,0 +1,18 @@
+{
+  "name": "project-context-memory",
+  "version": "0.1.2",
+  "description": "Portable project context memory for continuing work across Codex conversations and model providers.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Project Context Memory",
+    "shortDescription": "Keep project understanding portable across conversations.",
+    "longDescription": "Maintains an evidence-based Markdown context file with project scope, architecture, decisions, constraints, verification, and the next handoff so another Codex conversation or model can continue reliably.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Update the project's canonical context and prepare a handoff for the next conversation."
+  }
+}
