@@ -102,3 +102,46 @@ codex -c 'plugins."project-context-memory@project-context-local".enabled=false'
 ## License
 
 MIT
+
+---
+
+# Project Context Memory (English)
+
+A Codex plugin that keeps a portable, evidence-based project context in Markdown so work can continue across conversations, models, and editors.
+
+## What it does
+
+The plugin maintains project scope, current state, architecture, decisions, constraints, open questions, verification, and the next handoff. The context is stored in ordinary Markdown and can be committed with the project, so it is independent of a specific model or conversation database.
+
+## Installation
+
+In Codex Desktop, open **Settings → Plugins**, add this repository as a local Marketplace, and install **Project Context Memory**. In Codex CLI or VS Code, install the `skills/project-context-memory` directory into the normal Codex skills location, then restart Codex.
+
+## First use
+
+```text
+Use $project-context-memory to scan this project and create or update PROJECT_CONTEXT.md.
+Record only facts that can be verified from the repository, and include open questions and the next handoff.
+```
+
+The skill uses an existing `.codex/project-context.md`, `PROJECT_CONTEXT.md`, or `docs/project-context.md` before creating a new file.
+
+## Daily workflow
+
+At the start of a task, ask Codex to read the context file and the `Next handoff` section. After a meaningful change, ask it to update the affected architecture, decisions, verification, and handoff. Before moving to another conversation or model, ask it to prepare a portable handoff with the current status, blockers, next action, and relevant paths.
+
+## Enable and disable
+
+Use the toggle for **Project Context Memory** in **Settings → Plugins**. Disabling the plugin does not delete any project context file. To skip it for one task, say: `Do not update project context for this task.`
+
+## Cross-model migration
+
+Commit or copy the context Markdown file with the project. In a new conversation, ask the model to read it first, then inspect the files listed under `Next handoff`. No access to the original conversation is required.
+
+## Boundaries
+
+The plugin stores curated project facts and handoff information, not complete chat history. Never put API keys, passwords, private keys, hidden reasoning, or large logs in the context file. When the file conflicts with current code or the user's instruction, the code and current instruction take precedence.
+
+## License
+
+MIT
