@@ -1,0 +1,20 @@
+{
+  "name": "project-context-memory",
+  "interface": {
+    "displayName": "Project Context Memory"
+  },
+  "plugins": [
+    {
+      "name": "project-context-memory",
+      "source": {
+        "source": "local",
+        "path": "./plugins/project-context-memory"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

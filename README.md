@@ -27,7 +27,7 @@
 
 ### Codex CLI
 
-将仓库作为本地 Marketplace 使用，或把 `skills/project-context-memory` 复制到 `~/.codex/skills/project-context-memory`。安装后重新启动 Codex。
+将仓库作为本地 Marketplace 使用，或把 `plugins/project-context-memory/skills/project-context-memory` 复制到 `~/.codex/skills/project-context-memory`。安装后重新启动 Codex。
 
 ### VS Code
 
@@ -115,7 +115,7 @@ The plugin maintains project scope, current state, architecture, decisions, cons
 
 ## Installation
 
-In Codex Desktop, open **Settings → Plugins**, add this repository as a local Marketplace, and install **Project Context Memory**. In Codex CLI or VS Code, install the `skills/project-context-memory` directory into the normal Codex skills location, then restart Codex.
+In Codex Desktop, open **Settings → Plugins**, add this repository as a local Marketplace, and install **Project Context Memory**. In Codex CLI or VS Code, install the `plugins/project-context-memory/skills/project-context-memory` directory into the normal Codex skills location, then restart Codex.
 
 ## First use
 
